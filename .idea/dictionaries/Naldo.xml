@@ -2,6 +2,11 @@
   <dictionary name="Naldo">
     <words>
       <w>bootcss</w>
+      <w>topbar</w>
+      <w>topbtn</w>
+      <w>topbtngroup</w>
+      <w>toplogo</w>
+      <w>topnavbar</w>
     </words>
   </dictionary>
 </component>
