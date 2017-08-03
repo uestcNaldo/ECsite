@@ -69,6 +69,8 @@ body {
     text-align: center;
     height: 850px;
     padding: 0;
+
+    margin-bottom: 42px;
 }
 
 .text_line_left {
@@ -169,7 +171,6 @@ body {
     margin-top: 42px;
     margin-left: 0;
     margin-right: 0;
-
 }
 
 .text_label {
@@ -231,4 +232,134 @@ body {
     margin-top: 42px;
     margin-left: 0;
     margin-right: 0;
+}
+
+.content_2 {
+    text-align: center;
+    height: 650px;
+    padding: 0;
+    background-image: url(../img/banner_home_2.png);
+}
+
+.text_row_2T {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_row_2T div {
+    display: inline-block;
+}
+
+.text_row_3T {
+    margin-top: 42px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_row_3T div {
+    display: inline-block;
+}
+
+.content_3 {
+    text-align: center;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+.slide_2 {
+    margin-top: 59px;
+    margin-bottom: 120px;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide_2 div {
+    display: inline-block;
+}
+
+/*垂直居中问题*/
+.slide_2 > .logo_case_1,
+.slide_2 > .logo_case_2,
+.slide_2 > .logo_case_3 {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 2px 8px #ABB3BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label_dir_left {
+    width: 80px;
+    height: 80px;
+    margin-right: 22px;
+    background-image: url(../img/icon_row_left.png);
+
+}
+
+.label_dir_right {
+    width: 80px;
+    height: 80px;
+    margin-left: 22px;
+    background-image: url(../img/icon_row_right.png);
+}
+
+.logo_case_1 {
+    margin-right: 60px;
+}
+
+.logo_case_2 {
+
+}
+
+.logo_case_3 {
+    margin-left: 60px;
+}
+
+.img_case {
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    z-index: 0;
+}
+
+.logo_case_1 > .background_logo_case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_case_2 > .background_logo_case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_case_3 > .background_logo_case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_logo_case {
+    width: 300px;
+    height: 200px;
+    background: #75A2FF;
+    opacity: 0.95;
+    position: absolute;
+    z-index: -1;
+}
+/*鼠标访问显示背景文字*/
+.logo_case_1:hover > .background_logo_case {
+    z-index: 1;
+}
+
+.text_logo_case {
+    width: 260px;
+    color: #FFFFFF;
+    font-size: 16px;
+    background: transparent;
+    text-align: justify;
 }
