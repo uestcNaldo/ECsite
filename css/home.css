@@ -267,11 +267,12 @@ body {
     text-align: center;
     padding: 0;
     background: #FFFFFF;
+    margin-bottom: 120px;
 }
 
 .slide_2 {
     margin-top: 59px;
-    margin-bottom: 120px;
+
     /*text-align: center;*/
     display: flex;
     justify-content: center;
@@ -356,10 +357,86 @@ body {
     z-index: 1;
 }
 
+.logo_case_2:hover > .background_logo_case {
+    z-index: 1;
+}
+
+.logo_case_3:hover > .background_logo_case {
+    z-index: 1;
+}
+
 .text_logo_case {
     width: 260px;
     color: #FFFFFF;
     font-size: 16px;
     background: transparent;
     text-align: justify;
+}
+
+.footer {
+    height: 300px;
+    width: inherit;
+    background-color: #323C50;
+    padding-top: 50px;
+
+}
+.footer > .text_footer_1,
+.footer > .text_footer_2,
+.footer > .text_footer_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_footer_1 {
+    font-size: 18px;
+    color: #FFFFFF;
+
+}
+.text_footer_1 > * {
+    display: inline-block;
+}
+
+.text__line_vertical_footer {
+    width: 2px;
+    height: 18px;
+    background-color: #FFFFFF;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.text_footer_2 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 45px;
+}
+.text_footer_2 > * {
+    display: inline-block;
+}
+
+.text_footer_3 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 17px;
+}
+
+.img_about_phone {
+    width: 24px;
+    height: 24px;
+    margin-right: 19px;
+}
+
+.label_corporation {
+    margin-right: 8px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+}
+.text_corporation {
+    color: #FFFFFF;
 }
