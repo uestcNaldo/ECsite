@@ -38,7 +38,9 @@ body {
 }
 
 .text_btn {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text_btn > .text_btn_1 {
@@ -426,17 +428,4 @@ body {
     margin-right: 19px;
 }
 
-.label_corporation {
-    margin-right: 8px;
-}
 
-.circle {
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    border-radius: 8px;
-}
-.text_corporation {
-    color: #FFFFFF;
-}
