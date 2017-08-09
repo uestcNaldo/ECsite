@@ -6,56 +6,72 @@ body {
 .topbar {
     background-color: #323968;
     height: 80px;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar > * {
+    display: inline-block;
 }
 
+.topbar-header {
+    height: 80px;
+}
 .toplogo {
     width: 190px;
     height: 55px;
     margin-left: 72px;
     margin-top: 12px;
 }
+
 .topbtngroup {
-    height: 80px;
-    float: right;
-
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-
 .topbtn {
     background-color: transparent;
     width: 200px;
     height: 80px;
     padding: 0;
     border: 0;
-    border-radius: 0;
+    /*border-radius: 0;*/
 }
 
 .topbtn:hover {
-    background-color: #505A9F;
-}
-.topbtn:active {
     background-color: #505A9F;
 }
 
 .text_btn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
-.text_btn > .text_btn_1 {
+@font-face {
+    font-family: Helvetica_Regular;
+    src: url('../fonts/Helvetica.ttf');
+}
+
+/*line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部*/
+.text_btn > .text_btn_CN {
     font-size: 18px;
+    line-height: 18px;
     color: #FFFFFF;
     margin-top: 22px;
-    margin-bottom: 0;
 
 }
-.text_btn > .text_btn_2 {
+.text_btn > .text_btn_EN {
     font-size: 14px;
     color: #FFFFFF;
+    font-family: Helvetica_Regular, sans-serif;
+    line-height: 14px;
     margin-top: 9px;
-    margin-bottom: 0;
-    font-family: Helvetica, sans-serif;
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-style: normal;*/
 }
 
 .img_home {
@@ -427,5 +443,3 @@ body {
     height: 24px;
     margin-right: 19px;
 }
-
-
