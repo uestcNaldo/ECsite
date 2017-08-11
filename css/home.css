@@ -3,15 +3,12 @@ body {
 
 }
 
-.topbar {
+.header {
     background-color: #323968;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.topbar > * {
-    display: inline-block;
 }
 
 .topbar-header {
@@ -69,26 +66,56 @@ body {
     font-family: Helvetica_Regular, sans-serif;
     line-height: 14px;
     margin-top: 9px;
-
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    /*font-style: normal;*/
 }
 
 .img_home {
     height: 650px;
 }
 
-.topnavbar {
+.banner {
+    text-align: center;
+}
+
+/*轮播器的自定义CSS*/
+.carousel-indicators {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+}
+.carousel-indicators > li {
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    cursor: pointer;
+    margin: 0 0 0 9px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
     border: 0;
-    margin: 0;
+
+}
+.carousel-indicators > .active {
+    width: 20px;
+    height: 4px;
+    margin: 0 0 0 9px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #4CB1FF;
+    opacity: 0.8;
+    border: 0;
+}
+.carousel-indicators:first-child {
+    margin-left: 0;
 }
 
 .content_1 {
     text-align: center;
     height: 850px;
     padding: 0;
-
-    margin-bottom: 42px;
+    /*margin-bottom: 42px;*/
 }
 
 .text_line_left {
@@ -110,7 +137,6 @@ body {
     position: relative;
     top: 50%;
 }
-
 
 .text_p_1 {
     font-size: 24px;
@@ -166,6 +192,7 @@ body {
 .text_p_2 {
     font-family: 'Humanist521BT', sans-serif;
     font-size: 22px;
+    line-height: 22px;
     color: #A4A4A4;
 
 }
@@ -182,46 +209,44 @@ body {
 
 .text_p_3 {
     font-size: 14px;
+    line-height: 26px;
     color: #323968;
 }
 
 .grid_row_1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 42px;
     margin-left: 0;
     margin-right: 0;
 }
+/*.grid_row_1:nth-child(1) {*/
+    /*margin-left: 0;*/
+/*}*/
+.block_content {
+    margin-left: 70px;
+}
 
 .text_label {
+    font-size: 22px;
+    line-height: 22px;
+    color: #323968;
     margin-top: 31px;
     margin-bottom: 0;
 }
 
 .text_content {
     margin: 28px auto 0;
+    font-size: 14px;
+    color: #323968;
     line-height: 26px;
     max-width: 320px;
-
-
 }
 
 .img_home_content {
     width: 220px;
     height: 120px;
-}
-
-.block_content_1 {
-    padding: 0;
-    margin-right: 70px;
-
-}
-
-.block_content_2 {
-    padding: 0;
-}
-
-.block_content_3 {
-    padding: 0;
-    margin-left: 70px;
 }
 
 .text_line_leftT {
@@ -235,6 +260,7 @@ body {
 
 .text_1T {
     font-size: 24px;
+    line-height: 24px;
     color: #323968;
 }
 
@@ -247,6 +273,9 @@ body {
 }
 
 .grid_row_2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 42px;
     margin-left: 0;
     margin-right: 0;
@@ -255,12 +284,12 @@ body {
 .content_2 {
     text-align: center;
     height: 650px;
-    padding: 0;
+    padding-top: 30px;
     background-image: url(../img/banner_home_2.png);
 }
 
 .text_row_2T {
-    margin-top: 30px;
+
     text-align: center;
     display: flex;
     justify-content: center;
@@ -443,3 +472,4 @@ body {
     height: 24px;
     margin-right: 19px;
 }
+

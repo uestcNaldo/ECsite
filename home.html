@@ -11,48 +11,47 @@
   </head>
   <body>
       <!--导航栏-->
-      <nav class="navbar navbar-default navbar-static-top topnavbar">
-          <div class="topbar">
-              <div class="topbar-header">
-                  <img src="img/logo_topbar.png" class="toplogo" alt="E-Commerce LOGO">
+      <div class="header">
+          <div class="topbar-header">
+              <img src="img/logo_topbar.png" class="toplogo" alt="E-Commerce LOGO">
+          </div>
+          <div class="topbtngroup">
+              <div class="topbtn" role="button">
+                  <div class="text_btn">
+                      <div class="text_btn_CN">首页</div>
+                      <div class="text_btn_EN">HOME</div>
+                  </div>
               </div>
-              <div class="topbtngroup">
-                  <div class="topbtn" role="button">
-                      <div class="text_btn">
-                          <div class="text_btn_CN">首页</div>
-                          <div class="text_btn_EN">HOME</div>
-                      </div>
+              <div class="topbtn" role="button">
+                  <div class="text_btn">
+                      <div class="text_btn_CN">产品与服务</div>
+                      <div class="text_btn_EN">PRODUCTS</div>
                   </div>
-                  <div class="topbtn" role="button">
-                      <div class="text_btn">
-                          <div class="text_btn_CN">产品与服务</div>
-                          <div class="text_btn_EN">PRODUCTS</div>
-                      </div>
+              </div>
+              <div class="topbtn" role="button">
+                  <div class="text_btn">
+                      <div class="text_btn_CN">案例展示</div>
+                      <div class="text_btn_EN">CASE</div>
                   </div>
-                  <div class="topbtn" role="button">
-                      <div class="text_btn">
-                          <div class="text_btn_CN">案例展示</div>
-                          <div class="text_btn_EN">CASE</div>
+              </div>
+              <div class="topbtn" role="button">
+                  <div class="text_btn">
+                      <div class="text_btn_CN">关于我们</div>
+                      <div class="text_btn_EN">ABOUT US</div>
                       </div>
-                  </div>
-                  <div class="topbtn" role="button">
-                      <div class="text_btn">
-                          <div class="text_btn_CN">关于我们</div>
-                          <div class="text_btn_EN">ABOUT US</div>
-                      </div>
-                  </div>
               </div>
           </div>
-      </nav>
-      <!--内容-->
-      <!--Slide-->
-      <div id="imgSlide" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#imgSlide" data-slide-to="0" class="active"></li>
-              <li data-target="#imgSlide" data-slide-to="1"></li>
-              <li data-target="#imgSlide" data-slide-to="2"></li>
-          </ol>
+      </div>
 
+      <!--轮播器 Carousel-->
+      <div id="banner" class="carousel banner" data-ride="carousel">
+          <!--自定义指示器-->
+          <ol class="carousel-indicators indicators">
+              <li data-target="#banner" data-slide-to="0" class="active"></li>
+              <li data-target="#banner" data-slide-to="1" class=""></li>
+              <li data-target="#banner" data-slide-to="2" class=""></li>
+          </ol>
+          <!--轮播图片-->
           <div class="carousel-inner" role="listbox">
               <div class="item active">
                   <img src="img/banner_home_1.png" alt="first img" class="img_home">
@@ -64,72 +63,60 @@
                   <img src="img/banner_home_1.png" alt="first img" class="img_home">
               </div>
           </div>
-
-          <a class="left carousel-control" href="#imgSlide" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#imgSlide" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
       </div>
 
-      <div class="container content_1">
+      <!--主要内容-->
+      <div class="content_1">
           <div class="text_row_1T">
               <div class="text_line_leftT"></div>
               <div class="text_1T">我们提供什么</div>
               <div class="text_line_rightT"></div>
           </div>
-          <div class="row text_row_2">
-              <div class="col-md-12 text_p_container_2">
-                  <div class="text_p_2">What can we offer?</div>
-              </div>
+          <div class="text_row_2">
+              <div class="text_p_2">What can we offer?</div>
           </div>
-          <div class="row text_row_3">
-              <div class="col-md-12 text_p_container_3">
-                  <div class="text_p_3">基于B/S架构，将物联网、大数据与能源管理相结合，以高效环保的能源利用率为目标，我们帮助客户建立绿色企业形象。</div>
-              </div>
+          <div class="text_row_3">
+              <div class="text_p_3">基于B/S架构，将物联网、大数据与能源管理相结合，以高效环保的能源利用率为目标，我们帮助客户建立绿色企业形象。</div>
           </div>
 
-          <div class="row grid_row_1">
-              <div class="col-md-3 col-md-offset-1 block_content_1">
+          <div class="grid_row_1">
+              <div class="">
                   <img class="img_home_content" src="img/icon_home_accurate.png" alt="精确计量">
                   <div class="text_label">精确计量</div>
                   <div class="text_content">采用多功能电表-远程抄表技术，实现数据的实时监测，可形成小时冻结，日冻结，月冻结和年冻结数据，为能耗分析和节能改造提供依据。</div>
               </div>
-              <div class="col-md-3 block_content_2">
+              <div class="block_content">
                   <img class="img_home_content" src="img/icon_home_control.png" alt="远程监控">
                   <div class="text_label">远程监控</div>
                   <div class="text_content">可远程控制风机盘管的开关，控制和查询风机当前状态；批量更改、设定空调/风机的运行限定参数。</div>
               </div>
-              <div class="col-md-3 block_content_3">
+              <div class="block_content">
                   <img class="img_home_content" src="img/icon_home_area.png" alt="分项分类能耗分析">
                   <div class="text_label">分项分类能耗分析</div>
                   <div class="text_content">基于采集到的基础数据，分析各分类和分项的逐时、逐日、逐月和逐年能耗，以多种图表形式直观展现各分项分类的能耗对比。</div>
               </div>
           </div>
 
-          <div class="row grid_row_2">
-              <div class="col-md-3 col-md-offset-1 block_content_1">
+          <div class="grid_row_2">
+              <div class="">
                   <img class="img_home_content" src="img/icon_home_saving.png" alt="综合节能">
                   <div class="text_label">综合节能</div>
                   <div class="text_content">智能化控制服务提供了设定定时开关任务；季节性的空调温度上下限；用电量阈值；空调运行时段限制等节能控制手段，结合物理节能，让平均节能率达到25%以上。</div>
               </div>
-              <div class="col-md-3 block_content_2">
+              <div class="block_content">
                   <img class="img_home_content" src="img/icon_home_contrast.png" alt="能耗对比&节能核算">
                   <div class="text_label">能耗对比&节能核算</div>
                   <div class="text_content">可从总用电量上、工作时长、平均耗电量多个维度对任意区域或设备的能耗；从横向纵向对比设备任意时间点的耗电量，核算节能量和减少碳排放量。</div>
               </div>
-              <div class="col-md-3 block_content_3">
+              <div class="block_content">
                   <img class="img_home_content" src="img/icon_home_warning.png" alt="能耗预警">
                   <div class="text_label">能耗预警</div>
                   <div class="text_content">设备异常故障；能耗超标；设备在非允许时段开启等事件发生时，均会产生预警消息，让管理员第一时间管理情况，采取相应措施。</div>
               </div>
           </div>
-
       </div>
-      <div class="container-fluid content_2">
+
+      <div class="content_2 img-responsive">
           <div class="text_row_2T">
               <div class="text_line_leftT"></div>
               <div class="text_1T">多平台适配</div>
@@ -139,11 +126,11 @@
               <div class="text_p_2">Multi-platform</div>
           </div>
           <div class="text_row_3">
-              <div class="text_p_3">智慧能源管理平台是跨平台的综合能效监管平台，用户可以通过WEB端、IOS/ANDROID客户端、微信公众号多种方式登录到系统。</div>
-              <div class="text_p_3">单个账户同时只能在一个终端上登入，保证了账户安全性，让用户随时随地能接收到能耗信息。</div>
+              <div class="text_p_3">智慧能源管理平台是跨平台的综合能效监管平台，用户可以通过WEB端、IOS/ANDROID客户端、微信公众号多种方式登录到系统。<br>
+                  单个账户同时只能在一个终端上登入，保证了账户安全性，让用户随时随地能接收到能耗信息。</div>
           </div>
-
       </div>
+
       <div class="content_3">
           <div class="text_row_3T">
               <div class="text_line_leftT"></div>
