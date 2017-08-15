@@ -6,8 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>E商能-首页</title>
       <!-- Bootstrap -->
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/home.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+      <link type="text/css" rel="stylesheet" href="css/home.css">
   </head>
   <body>
       <!--导航栏-->
@@ -16,29 +16,52 @@
               <img src="img/logo_topbar.png" class="toplogo" alt="E-Commerce LOGO">
           </div>
           <div class="topbtngroup">
-              <div class="topbtn" role="button">
-                  <div class="text_btn">
-                      <div class="text_btn_CN">首页</div>
-                      <div class="text_btn_EN">HOME</div>
-                  </div>
-              </div>
-              <div class="topbtn" role="button">
-                  <div class="text_btn">
-                      <div class="text_btn_CN">产品与服务</div>
-                      <div class="text_btn_EN">PRODUCTS</div>
-                  </div>
-              </div>
-              <div class="topbtn" role="button">
-                  <div class="text_btn">
-                      <div class="text_btn_CN">案例展示</div>
-                      <div class="text_btn_EN">CASE</div>
-                  </div>
-              </div>
-              <div class="topbtn" role="button">
-                  <div class="text_btn">
-                      <div class="text_btn_CN">关于我们</div>
-                      <div class="text_btn_EN">ABOUT US</div>
+              <div class="topbtn" role="button" style="background-color: #505A9F">
+                  <a href="home.html">
+                      <div class="text_btn">
+                        <div class="text_btn_CN">首页</div>
+                        <div class="text_btn_EN">HOME</div>
                       </div>
+                  </a>
+
+              </div>
+              <div class="topbtn topbtn_products" role="button">
+                  <a>
+                      <div class="text_btn">
+                          <div class="text_btn_CN">产品与服务</div>
+                          <div class="text_btn_EN">PRODUCTS</div>
+                      </div>
+                  </a>
+                  <div class="downlist">
+                      <a>
+                          <div>系统平台</div>
+                          <div>SYSTEM</div>
+                      </a>
+                      <a>
+                          <div>硬件产品</div>
+                          <div>HARDWARE</div>
+                      </a>
+                      <a>
+                          <div>解决方案</div>
+                          <div>SOLUTION</div>
+                      </a>
+                  </div>
+              </div>
+              <div class="topbtn" role="button">
+                  <a>
+                      <div class="text_btn">
+                          <div class="text_btn_CN">案例展示</div>
+                          <div class="text_btn_EN">CASE</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="topbtn" role="button">
+                  <a>
+                      <div class="text_btn">
+                          <div class="text_btn_CN">关于我们</div>
+                          <div class="text_btn_EN">ABOUT US</div>
+                      </div>
+                  </a>
               </div>
           </div>
       </div>
@@ -116,18 +139,23 @@
           </div>
       </div>
 
-      <div class="content_2 img-responsive">
-          <div class="text_row_2T">
-              <div class="text_line_leftT"></div>
-              <div class="text_1T">多平台适配</div>
-              <div class="text_line_rightT"></div>
+      <div class="content_2">
+          <div class="title_text">
+              <div class="text_row_2T">
+                  <div class="text_line_leftT"></div>
+                  <div class="text_1T">多平台适配</div>
+                  <div class="text_line_rightT"></div>
+              </div>
+              <div class="text_row_2">
+                  <div class="text_p_2">Multi-platform</div>
+              </div>
+              <div class="text_row_3">
+                  <div class="text_p_3">智慧能源管理平台是跨平台的综合能效监管平台，用户可以通过WEB端、IOS/ANDROID客户端、微信公众号多种方式登录到系统。<br>
+                      单个账户同时只能在一个终端上登入，保证了账户安全性，让用户随时随地能接收到能耗信息。</div>
+              </div>
           </div>
-          <div class="text_row_2">
-              <div class="text_p_2">Multi-platform</div>
-          </div>
-          <div class="text_row_3">
-              <div class="text_p_3">智慧能源管理平台是跨平台的综合能效监管平台，用户可以通过WEB端、IOS/ANDROID客户端、微信公众号多种方式登录到系统。<br>
-                  单个账户同时只能在一个终端上登入，保证了账户安全性，让用户随时随地能接收到能耗信息。</div>
+          <div>
+              <img src="img/banner_home_2.png" width="100%">
           </div>
       </div>
 
@@ -141,26 +169,32 @@
               <div class="text_p_2">Classic Case</div>
           </div>
           <div class="text_row_3">
-              <div class="text_p_3">从业以来，我们致力于给用户提供“能耗数据化，数据可视化，节能综合化，控制智能化”的全方位服务，给许多用户提供了一站式解决方案。</div>
+              <div class="text_p_3">从业以来，我们致力于给用户提供“能耗数据化，数据可视化，节能综合化，
+                  控制智能化”的全方位服务，给许多用户提供了一站式解决方案。</div>
           </div>
           <div class="slide_2">
               <div class="label_dir_left" role="button"></div>
               <div class="logo_case_1">
                   <img class="img_case" src="img/logo_state-grid.png" alt="案例">
                   <div class="background_logo_case">
-                      <div class="text_logo_case">国网绵阳分公司办公大楼完成了空调能源集中管理方案，通过长虹能源管理系统方案，完成能耗精准计量、分时区统计与分析、远程监控与管理等核心功能，真正实现能源的可视化管理。</div>
+                      <div class="text_logo_case">国网绵阳分公司办公大楼完成了空调能源集中管理方案，通过长虹能源管理系统方案，
+                          完成能耗精准计量、分时区统计与分析、远程监控与管理等核心功能，真正实现能源的可视化管理。</div>
                   </div>
               </div>
               <div class="logo_case_2">
                   <img class="img_case" src="img/logo_china-tower.png" alt="案例">
                   <div class="background_logo_case">
-                      <div class="text_logo_case">案例分析</div>
+                      <div class="text_logo_case">中国铁搭遂宁分公司
+                          完成船山运管所、船山水利局、遂宁电力公司、船山实验中学、
+                          船山机电校、龙坪机电校等多个基站点空调节能改造与远程监控，通过前后对比法进行能耗对比，综合节电率为：24%</div>
                   </div>
               </div>
               <div class="logo_case_3">
                   <img class="img_case" src="img/logo_china-mobile.png" alt="案例">
                   <div class="background_logo_case">
-                      <div class="text_logo_case">案例分析</div>
+                      <div class="text_logo_case">重庆移动有限公司西永分公司完成空调节能改造试点
+                          全程实时远程采集空调能耗数据并监控空调运行状况，通过AB对比法进行
+                          能耗比较，得出综合节电率：30.5%</div>
                   </div>
               </div>
               <div class="label_dir_right" role="button"></div>
@@ -168,16 +202,16 @@
       </div>
       <div class="footer">
           <div class="text_footer_1">
-              <div>首页</div>
+              <a href="home.html" role="link">首页</a>
               <div class="text__line_vertical_footer"></div>
-              <div>产品与服务</div>
+              <a href="#">产品与服务</a>
               <div class="text__line_vertical_footer"></div>
-              <div>案例展示</div>
+              <a href="#">案例展示</a>
               <div class="text__line_vertical_footer"></div>
-              <div>关于我们</div>
+              <a href="#">关于我们</a>
           </div>
           <div class="text_footer_2">
-              <img class="img_about_phone" src="img/icon_about_phone.png" alt="咨询电话">
+              <img class="img_about_phone" src="img/icon_home_phone.png" alt="咨询电话">
               <div>咨询电话 028-65786048</div>
           </div>
           <div class="text_footer_3">

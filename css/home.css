@@ -38,18 +38,63 @@ body {
 .topbtn:hover {
     background-color: #505A9F;
 }
+.topbtn_products {
 
+}
+.topbtn_products:hover > .downlist{
+    display: block;
+}
+
+.topbtn > a {
+    display: block;
+    height: 80px;
+    text-decoration: none;
+}
 .text_btn {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
 }
 
+.downlist {
+    position: relative;
+    display: none;
+    z-index: 1;
+
+}
+.downlist > a {
+    display: block;
+    height: 80px;
+    position: relative;
+    background-color: #FFFFFF;
+    color: #000000;
+    opacity: 0.8;
+    text-decoration: none;
+    text-align: center;
+}
+.downlist > a:hover {
+    opacity: 0.9;
+}
+.downlist > a > div:nth-child(1) {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    padding-top: 22px;
+}
+.downlist > a > div:nth-child(2) {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: Helvetica-Regular, sans-serif;
+    color: #000000;
+    padding-top: 8px;
+}
+
+
 @font-face {
-    font-family: Helvetica_Regular;
+    font-family: Helvetica-Regular;
     src: url('../fonts/Helvetica.ttf');
+
 }
 
 /*line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部*/
@@ -63,7 +108,7 @@ body {
 .text_btn > .text_btn_EN {
     font-size: 14px;
     color: #FFFFFF;
-    font-family: Helvetica_Regular, sans-serif;
+    font-family: Helvetica-Regular, sans-serif;
     line-height: 14px;
     margin-top: 9px;
 }
@@ -178,6 +223,11 @@ body {
     width: auto;
 }
 
+@font-face {
+    font-family: Humanist521BT-Light;
+    src: url('../fonts/Humanist521BT-Light.otf');
+}
+
 .text_row_2 {
     margin-top: 10px;
     margin-left: 0;
@@ -190,11 +240,10 @@ body {
 }
 
 .text_p_2 {
-    font-family: 'Humanist521BT', sans-serif;
+    font-family: Humanist521BT-Light, sans-serif;
     font-size: 22px;
     line-height: 22px;
     color: #A4A4A4;
-
 }
 
 .text_row_3 {
@@ -243,6 +292,9 @@ body {
     line-height: 26px;
     max-width: 320px;
 }
+.text_content:hover{
+    cursor: default;
+}
 
 .img_home_content {
     width: 220px;
@@ -283,13 +335,16 @@ body {
 
 .content_2 {
     text-align: center;
-    height: 650px;
+    /*height: 650px;*/
+}
+.content_2 > .title_text {
     padding-top: 30px;
-    background-image: url(../img/banner_home_2.png);
+    /*margin-top: 30px;*/
+    position: relative;
+    background-color: #DEE5F8;
 }
 
 .text_row_2T {
-
     text-align: center;
     display: flex;
     justify-content: center;
@@ -419,6 +474,9 @@ body {
     background: transparent;
     text-align: justify;
 }
+.text_logo_case:hover{
+    cursor: default;
+}
 
 .footer {
     height: 300px;
@@ -442,6 +500,13 @@ body {
 }
 .text_footer_1 > * {
     display: inline-block;
+}
+.text_footer_1 > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.text_footer_1 > a:hover,:visited,:link {
+    text-decoration: none;
 }
 
 .text__line_vertical_footer {
